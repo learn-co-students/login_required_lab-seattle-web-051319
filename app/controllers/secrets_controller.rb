@@ -8,7 +8,7 @@ class SecretsController < ApplicationController
 	private
 	
 	def require_login
-		redirect_to login_path unless session.include? :name
+		redirect_to login_path if current_user.nil?
 	end
 	
 end
