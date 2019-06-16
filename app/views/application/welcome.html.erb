@@ -1,0 +1,11 @@
+Hi, <%= session[:name] %>.
+
+<br><br>
+
+<!-- <a href="<%# redirect_to show_path %>">secret</a> -->
+
+<br><br>
+
+<%= form_tag logout_path do %>
+	<%= submit_tag "logout" %>
+<% end %>
